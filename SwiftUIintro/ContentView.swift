@@ -9,19 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack  {
-            //modifiers text display name
-            Text("Hello, Jessica")
-                .font(.largeTitle)
-            //CREATE a button
-            Button(action: {
-                print("hello jess")
-            }) {
-                Text("Press Me")
+        //vstack
+        VStack {
+            //image using sf symbols
+            Image(systemName: "person.crop.circle")
+                .resizable() //modifier to resize
+                .frame(width: 200, height: 200) //frame modifier 
+            
+            
             }
         }
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
