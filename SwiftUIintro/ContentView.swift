@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HStack  {
+            //modifiers text display name
+            Text("Hello, Jessica")
+                .font(.largeTitle)
+            //CREATE a button
+            Button(action: {
+                print("hello jess")
+            }) {
+                Text("Press Me")
+            }
+        }
     }
 }
 
